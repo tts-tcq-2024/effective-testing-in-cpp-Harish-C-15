@@ -36,7 +36,7 @@ void testPrintColorMap() {
     }
    
     // Test if the output matches the expected output
-    assert(oss.str() == expectedOutput && "Test failed: Output is not correctly aligned or mapped.");
+    assert(oss.str() == expectedOutput.str() && "Test failed: Output is not correctly aligned or mapped.");
 }
 
 int main() {
