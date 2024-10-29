@@ -21,6 +21,7 @@ void testPrintColorMap() {
     std::ostringstream oss;
     std::streambuf* originalCout = std::cout.rdbuf();
     std::cout.rdbuf(oss.rdbuf());
+    std::ostringstream expectedOutput
     
     printColorMap();
     
