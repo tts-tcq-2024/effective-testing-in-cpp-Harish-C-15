@@ -1,4 +1,7 @@
 #include <iostream>
+#include <iomanip>
+#include <sstream>
+#include <string>
 #include <assert.h>
 
 int printColorMap() {
@@ -15,7 +18,7 @@ int printColorMap() {
 
 void testPrintColorMap() {
     std::ostringstream oss;
-    std::streambuf* originalCout = std::cout.rdbuf()
+    std::streambuf* originalCout = std::cout.rdbuf();
     std::cout.rdbuf(oss.rdbuf());
     
     printColorMap();
